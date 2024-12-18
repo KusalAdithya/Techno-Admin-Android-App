@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "846738546142",
+    "firebase_url": "https://techno-app-4c1a6-default-rtdb.firebaseio.com",
+    "project_id": "techno-app-4c1a6",
+    "storage_bucket": "techno-app-4c1a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846738546142:android:fd2bd6aedf9926f382914f",
+        "android_client_info": {
+          "package_name": "com.waka.techno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846738546142-c4868h6cu122h69k25o55r1moa0q2c4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waka.techno",
+            "certificate_hash": "f0a57a60031f0344ccebf9e7226ec878cadb3cb1"
+          }
+        },
+        {
+          "client_id": "846738546142-l5kcendg3vjkq4e7qikvccc5u87jg29t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waka.techno",
+            "certificate_hash": "c34b2baef0b4aa1d0605023c949a9d6037fce415"
+          }
+        },
+        {
+          "client_id": "846738546142-ucrc97r2dcoblleuok0g1fbn96oa402c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ6J34GukB8jGt0QrzQiCDO3C8DDVmZLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846738546142-ucrc97r2dcoblleuok0g1fbn96oa402c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846738546142:android:e06a5a2a6c3ff15d82914f",
+        "android_client_info": {
+          "package_name": "com.waka.techoadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846738546142-kku0g0qbm1533hronc5lq7377mbv353g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waka.techoadmin",
+            "certificate_hash": "c34b2baef0b4aa1d0605023c949a9d6037fce415"
+          }
+        },
+        {
+          "client_id": "846738546142-o7oj3h4a2ko9gte6dpkqe3gvkeueo1mv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waka.techoadmin",
+            "certificate_hash": "f0a57a60031f0344ccebf9e7226ec878cadb3cb1"
+          }
+        },
+        {
+          "client_id": "846738546142-ucrc97r2dcoblleuok0g1fbn96oa402c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ6J34GukB8jGt0QrzQiCDO3C8DDVmZLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846738546142-ucrc97r2dcoblleuok0g1fbn96oa402c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

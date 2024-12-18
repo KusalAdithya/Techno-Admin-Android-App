@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/splashIcon"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:alpha="2"
+            android:visibility="visible" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545"
+            android:scaleX="0"
+            android:scaleY="0" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView2"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="24dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@id/splashIcon"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:translationY="-70dp"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.463"
+            android:layout_marginBottom="-165dp"
+            android:alpha="1" />
+        <Constraint
+            android:layout_height="wrap_content"
+            app:layout_editor_absoluteX="138dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:alpha="1.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:transitionEasing="cubic(0.2,0.2,0.59,0.59)"
+            android:layout_marginBottom="-120dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:layout_constraintVertical_bias="0.486" />
+        <Constraint
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp" />
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="1564"
+        app:autoTransition="animateToEnd"
+        >
+        <KeyFrameSet >
+            <KeyAttribute
+                app:motionTarget="@+id/splashIcon"
+                app:framePosition="8"
+                android:alpha="1"
+                android:translationY="0dp" />
+            <KeyAttribute
+                app:motionTarget="@+id/textView"
+                app:framePosition="97"
+                android:alpha="0.5" />
+            <KeyAttribute
+                app:motionTarget="@+id/textView"
+                app:framePosition="94"
+                android:alpha="0.0" />
+            <KeyAttribute
+                app:motionTarget="@+id/splashIcon"
+                app:framePosition="0"
+                android:alpha="1" />
+        </KeyFrameSet>
+    </Transition>
+</MotionScene>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottomNavHome"
+        android:title="@string/home"
+        android:icon="@drawable/home_icon" />
+
+    <item android:id="@+id/bottomNavProducts"
+        android:title="@string/my_products"
+        android:icon="@drawable/products_icon" />
+
+    <item android:id="@+id/bottomNavOrders"
+        android:title="@string/orders"
+        android:icon="@drawable/order_icon"
+        />
+
+<!--    <item android:id="@+id/bottomNavWishlist"-->
+<!--        android:title="@string/wish"-->
+<!--        android:icon="@drawable/wishlist_icon"/>-->
+
+
+    <item android:id="@+id/bottomNavProfile"
+        android:title="@string/profile"
+        android:icon="@drawable/user_icon"/>
+
+</menu>

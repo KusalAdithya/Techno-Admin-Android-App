@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/main_blue"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/racesport"
+                android:gravity="center"
+                android:text="Techno \nAdmin"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="top"
+                android:background="@drawable/fragment_background" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout3"
+                        android:layout_width="370dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/fragment_content_background"
+                        android:padding="10dp"
+                        android:paddingBottom="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="15dp"
+                            tools:layout_editor_absoluteX="10dp"
+                            tools:layout_editor_absoluteY="10dp">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="@font/racesport"
+                                android:text="Log In"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="24dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/nasalization"
+                                android:text="Welcome Admin \nWhere Tech Meets Innovation"
+                                android:textAlignment="center"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="12dp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                                app:layout_constraintStart_toStartOf="@+id/textView4"
+                                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                            <EditText
+                                android:id="@+id/emailText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="90dp"
+                                android:background="@drawable/text_field_background"
+                                android:drawableStart="@drawable/email_icon"
+                                android:drawablePadding="5dp"
+                                android:ems="10"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:padding="8dp"
+                                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                                app:layout_constraintStart_toStartOf="@+id/textView4"
+                                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                            <EditText
+                                android:id="@+id/passwordText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:background="@drawable/text_field_background"
+                                android:drawableStart="@drawable/password_icon"
+                                android:drawablePadding="5dp"
+                                android:ems="10"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:padding="8dp"
+                                app:layout_constraintEnd_toEndOf="@+id/emailText"
+                                app:layout_constraintStart_toStartOf="@+id/emailText"
+                                app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+                            <TextView
+                                android:id="@+id/fogotPassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:text="Forgot password?"
+                                android:textAlignment="center"
+                                android:textColor="@color/main_blue"
+                                app:layout_constraintEnd_toEndOf="@+id/passwordText"
+                                app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+
+                            <Button
+                                android:id="@+id/loginBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="36dp"
+                                android:backgroundTint="@color/dark_blue"
+                                android:fontFamily="@font/nasalization"
+                                android:text="Login"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="@+id/passwordText"
+                                app:layout_constraintStart_toStartOf="@+id/passwordText"
+                                app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
